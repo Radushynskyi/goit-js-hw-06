@@ -86,8 +86,7 @@ console.log("Задание 8");
 
 const getUsersWithFriend = (users, friendName) => {
     return users
-    .filter(userFriend => userFriend.friends
-    .some(isFriend => isFriend === friendName))
+    .filter(userFriend => userFriend.friends.includes(friendName))
     .map(user => user.name);
   };
   
